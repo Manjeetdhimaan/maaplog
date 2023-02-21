@@ -10,7 +10,7 @@ Last change:    00/00/00
 
 	"use strict";
 
-	var FasTrans = {
+	var MaapLog = {
 		init: function() {
 			this.Basic.init();  
 		},
@@ -1042,7 +1042,7 @@ Last change:    00/00/00
 			}
 		}
 		jQuery(document).ready(function (){
-			FasTrans.init();
+			MaapLog.init();
 		});
 
 	})();
