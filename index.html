@@ -168,9 +168,9 @@
 								data-frame_999="o:0;st:w;"
 								style="z-index:5;font-family:'Roboto';text-transform:uppercase;">We
 								specialise in the transportation
-							</rs-layer><!--
-
-							--><rs-layer
+							</rs-layer>
+							<!-- -->
+							<rs-layer
 								id="slider-29-slide-76-layer-1"
 								data-type="text"
 								data-rsp_ch="on"
@@ -186,9 +186,9 @@
 								style="z-index:6;font-family:'Poppins'; padding-bottom: 10px;">Focused
 								on aviation<br />
 								and energy.
-							</rs-layer><!--
-
-							--><rs-layer
+							</rs-layer>
+							<!-- -->
+							<rs-layer
 								id="slider-29-slide-76-layer-2"
 								data-type="text"
 								data-rsp_ch="on"
@@ -775,7 +775,7 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="wc-input">
-													<span>Freight type:</span>
+													<span>Freight type*</span>
 													<div class="wc-select position-relative">
 														<select name="#" id="freight-type">
 															<option value="">Seelct</option>
@@ -788,7 +788,7 @@
 											</div>
 											<div class="col-md-12">
 												<div class="wc-input">
-													<span>Load:</span>
+													<span>Load*</span>
 													<div class="wc-select position-relative">
 														<select name="" id="load">
 															<option value="">Seelct</option>
@@ -802,7 +802,7 @@
 											<div class="col-md-12">
 												<div class="wc-input-range"
 													data-background="assets/img/bg/wc-f-bg.jpg">
-													<span>DIST (Miles):</span>
+													<span>DIST (Miles)*</span>
 													<div class="wc-input-range-area d-flex align-items-center">
 														<div id="slider-range" class="range-bar"></div>
 														<div class="range-value clearfix">
@@ -813,7 +813,7 @@
 											</div>
 											<div class="col-md-6">
 												<div class="wc-input">
-													<span>Your name:</span>
+													<span>Your name*</span>
 													<div class="wc-text-input position-relative">
 														<input type="text" placeholder="Name.." id="name">
 													</div>
@@ -821,7 +821,7 @@
 											</div>
 											<div class="col-md-6">
 												<div class="wc-input">
-													<span>Phone number:</span>
+													<span>Phone number*</span>
 													<div class="wc-text-input position-relative">
 														<input type="text" placeholder="+91..." id="phone">
 													</div>
@@ -1146,8 +1146,8 @@
 		
 			submitBTN.addEventListener('click', (e) => {
 			  e.preventDefault();
-			  if ((!name || name.value.trim() === '')) {
-				alert('Please fill all required values')
+			  if ((!name || name.value.trim() === '' || !load || load.value === '' || miles.value ==='' || freightType.value === '' || phone.value === '')) {
+				window.alert('Please fill all required values');
 				return;
 			  }
 		
@@ -1166,7 +1166,7 @@
 			  console.log(amount.value, freightType.value, load.value, phone.value)
 		
 			  document.body.style.overflow = 'hidden'
-			  fetch('http://localhost:3100/api/send-query-maaplog', {
+			  fetch('https://www.api-email.dopedigital.in/api/send-query-maaplog', {
 				method: "post",
 				body: JSON.stringify({
 				  name: name.value,
