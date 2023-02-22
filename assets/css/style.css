@@ -17782,11 +17782,5 @@ use 0% instead for anticlockwise */
   }
 }
 
-@media(max-width: 600px) {
-  .tp-rs-img {
-    display: block!important;
-    margin: auto!important;
-  }
-}
 
 /*---------------------------------------------------- */
