@@ -1047,6 +1047,12 @@ select:visited {
   padding-bottom: 30px;
   font-family: "Poppins";
 }
+.ft-header-section.header-style-three.sticky-on .ft-main-navigation li a {
+  color: #000;
+  font-weight: 600;
+  padding-bottom: 30px;
+  font-family: "Poppins";
+}
 .ft-header-section.header-style-three .dropdown:after {
   color: #fa4216;
 }
@@ -1245,7 +1251,8 @@ select:visited {
 }
 .ft-header-section.sticky-on.header-style-three {
   padding: 12px 0px;
-  background-color: #121213;
+  background-color: #fff;
+  color: #000
 }
 .ft-header-section.sticky-on.header-style-three .ft-header-top {
   display: none !important;
@@ -1360,8 +1367,9 @@ select:visited {
 }
 
 .mobile_menu_button {
-  right: 0px;
+  /* right: 0px; */
   top: -62px;
+  float:left;
   z-index: 5;
   color: #fff;
   display: none;
@@ -2006,10 +2014,12 @@ select:visited {
 }
 
 .mobile_menu_button {
-  right: 0px;
+  /* right: 0px; */
+  left: 0;
   top: -62px;
   z-index: 5;
-  color: #fff;
+  float:left;
+  color: #000;
   display: none;
   font-size: 24px;
   cursor: pointer;
@@ -16275,6 +16285,11 @@ ul li {
     display: none;
   }
 
+  .ft-header-section.header-style-three .ft-brand-logo {
+    /* width: 130px; */
+    margin-left: 35px
+  }
+
   .ft-main-navigation {
     display: none;
   }
@@ -17261,7 +17276,7 @@ ul li {
   .ft-header-section.header-style-three {
     position: static;
     padding: 10px 0px;
-    background-color: #000;
+    background-color: #fff;
   }
 
   .ft-header-section.header-style-three .ft-header-cta-btn a {
@@ -17280,10 +17295,13 @@ ul li {
 
   .ft-header-section.header-style-three .ft-brand-logo {
     width: 130px;
+    margin-left: 35px
   }
 
   .ft-header-section.sticky-on.header-style-three {
     position: fixed;
+    background-color: #fff;
+    
   }
 
   .ft-header-section.sticky-on.header-style-three .ft-header-cta-btn a {
