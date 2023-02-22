@@ -937,7 +937,8 @@ select:visited {
   font-weight: 700;
 }
 .ft-header-section.header-style-two .ft-header-main-menu-wrapper {
-  background-color: #002a34;
+  /* background-color: #002a34; */
+  background-color: #fff;
 }
 .ft-header-section.header-style-two .ft-header-main-menu .ft-site-logo-area {
   width: 322px;
@@ -973,7 +974,7 @@ select:visited {
   margin-left: 50px;
 }
 .ft-header-section.header-style-two .ft-header-main-menu .ft-main-navigation li a {
-  color: #fff;
+  color: #000;
   font-weight: 500;
   padding-bottom: 30px;
 }
@@ -981,18 +982,19 @@ select:visited {
   margin-left: 60px;
 }
 .ft-header-section.header-style-two .ft-header-cta-btn a {
-  color: #fff;
+  color: #000;
   height: 55px;
   width: 160px;
   font-size: 15px;
   font-weight: 700;
   border-radius: 30px;
   font-family: "Poppins";
-  border: 2px solid #fff;
+  border: 2px solid #000;
 }
 .ft-header-section.header-style-two .ft-header-cta-btn a:hover {
   background-color: #ea1e00;
   border: 2px solid #ea1e00;
+  color: #fff;
 }
 .ft-header-section.header-style-three {
   top: 0;
@@ -16287,6 +16289,9 @@ ul li {
 
   .ft-header-section.header-style-three .ft-brand-logo {
     /* width: 130px; */
+    margin-left: 35px
+  }
+  .ft-header-section.header-style-two .ft-header-main-menu .ft-site-logo {
     margin-left: 35px
   }
 
